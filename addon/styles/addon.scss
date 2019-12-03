@@ -1,90 +1,23 @@
 .slack-search-input {
   -webkit-font-smoothing: antialiased;
-  position: relative;
-  width: 100%;
-  z-index: 500;
-  border: 1px solid #ccc;
-  padding: 0 8px;
-  border-radius: 6px;
-  color:#333;
+  z-index: 5;
 
-  input.main-input {
-    height: 30px;
-    width: 100%;
+  .main-input {
     font-size: 18px;
-    border: none;
-    overflow: hidden;
+    resize: none;
+    width: 300px;
     background: transparent;
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    z-index: 2;
-    letter-spacing: 0px;
-    word-spacing: 0px;
-    position: relative;
     font-family: Arial, sans-serif;
     direction: ltr;
+    float: left;
   }
 
-  .background-container {
-    color: transparent;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 1;
-    outline: rgb(85, 84, 89) none 0px;
-    font-size: 18px;
-    font-family: Arial, sans-serif;
-    letter-spacing: 0px;
-    word-spacing: 0px;
-    margin: 3px 8px 0 8px;
-    white-space: pre;
-    overflow: hidden;
-    .hint-value {
-      color: #ccc;
-    }
-  }
 
   .hint-menu-container {
-    position: relative;
-    left: -6px;
-    .arrow {
-      &::after {
-        content: '';
-        display: block;
-        width: 11px;
-        height: 11px;
-        background-clip: padding-box;
-        background-color: #fff;
-        transform: rotate(45deg);
-      }
-      position: absolute;
-      top: 7px;
-      left: 20px;
-      z-index: 40;
-    }
-
-    .arrow-border {
-      &::after {
-        content: '';
-        display: block;
-        width: 12px;
-        height: 11px;
-        background-clip: padding-box;
-        background-color: #ccc;
-        transform: rotate(45deg);
-      }
-      position: absolute;
-      top: 6px;
-      left: 20px;
-    }
+    margin-left: 306px;
 
     .hint-menu {
-      position: absolute;
       background-color: white;
-      top: 11px;
-      left: 0px;
       min-width: 300px;
       padding: 10px 14px;
       box-shadow: 0 0 5px 0px #eee;
@@ -188,6 +121,3 @@
     }
   }
 }
-
-
-

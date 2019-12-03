@@ -1,8 +1,8 @@
 import { reads } from '@ember/object/computed';
 import EmberObject, { set, get, computed } from '@ember/object';
-import DateSource from './components/slack-search-input/modifiers/-date/adapter';
-import ListSource from './components/slack-search-input/modifiers/-list/adapter';
-import DefaultSource from './components/slack-search-input/modifiers/-default/adapter';
+import DateSource from './components/search-suggest-side-by-side/modifiers/-date/adapter';
+import ListSource from './components/search-suggest-side-by-side/modifiers/-list/adapter';
+import DefaultSource from './components/search-suggest-side-by-side/modifiers/-default/adapter';
 
 export default EmberObject.extend({
   modifier: '',

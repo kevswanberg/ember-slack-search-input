@@ -1,0 +1,35 @@
+{{textarea
+    autocomplete="off"
+    spellcheck=false
+    class='main-input'
+    placeholder=attrs.placeholder
+    value=(readonly proxyValue)
+    maxlength=maxlength
+    click=(action 'onClick')
+    paste=(action 'inputPaste')
+    cut=(action 'inputCut')
+    focus-out=(action 'onFocusOut')
+    focus-in=(action 'onFocusIn')
+    key-down=(action 'onKeyDown')
+    disabled=disabled
+    rows=15
+}}
+{{#if popupComponent}}
+  {{component popupComponent
+      token=activeToken
+      cursor=activeTokenCursor
+      changeTokenModel=(action 'changeTokenModel')
+      on-focus=(action (mut isPopupFocused) true)
+      enterClicked=enterClicked
+      upClicked=upClicked
+      downClicked=downClicked
+  }}
+{{else}}
+  <div class="hint-menu-container">
+    <span class="arrow"></span>
+    <span class="arrow-border"></span>
+    <div class="hint-menu with-help">
+      {{yield (action 'concatToInputValue')}}
+    </div>
+  </div>
+{{/if}}

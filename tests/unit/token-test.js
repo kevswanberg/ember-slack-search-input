@@ -1,5 +1,5 @@
-import Token from 'ember-slack-search-input/token';
-import { prepareConig } from 'ember-slack-search-input/util';
+import Token from 'ember-search-suggest-side-by-side/token';
+import { prepareConig } from 'ember-search-suggest-side-by-side/util';
 import { module, test } from 'qunit';
 
 module('Unit | Token');
@@ -95,4 +95,3 @@ test('token list type works', function(assert) {
   ]);
 
 });
-

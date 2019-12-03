@@ -1,5 +1,5 @@
 {
-  "name": "ember-slack-search-input",
+  "name": "ember-search-suggest-side-by-side",
   "version": "2.0.2",
   "description": "Ember Slack Search Input addon",
   "directories": {
@@ -13,7 +13,6 @@
     "test": "ember test",
     "test:all": "ember try:each"
   },
-  "repository": "https://github.com/bekzod/ember-slack-search-input",
   "engines": {
     "node": ">= 6.*"
   },
@@ -65,7 +64,6 @@
     "moment-timezone": "^0.4.0"
   },
   "ember-addon": {
-    "configPath": "tests/dummy/config",
-    "demoURL": "http://ember-slack-search-input.surge.sh"
+    "configPath": "tests/dummy/config"
   }
 }

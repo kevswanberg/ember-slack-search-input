@@ -22,6 +22,7 @@ export default Component.extend({
   downClicked: false,
   isPopupHidden: false,
   isPopupFocused: false, // when popup focused not triggering enter event when enter clicked
+  multiLine: true,
 
   configHash: {},
   firstTimeFocus: true,
@@ -51,7 +52,7 @@ export default Component.extend({
     let type = get(this, 'activeToken.type');
     set(this, 'isPopupFocused', false);
     if (type && (type !== 'space')) {
-      return 'slack-search-input/modifiers/' + (type === 'modifier-list' ? '-list' : '-' + type);
+      return 'search-suggest-side-by-side/modifiers/' + (type === 'modifier-list' ? '-list' : '-' + type);
     }
   }),
 

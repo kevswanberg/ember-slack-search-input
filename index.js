@@ -7,7 +7,7 @@ const mergeTrees = require('broccoli-merge-trees');
 const fastbootTransform = require('fastboot-transform');
 
 module.exports = {
-  name: 'ember-slack-search-input',
+  name: 'ember-search-suggest-side-by-side',
 
   included(app) {
     this._super.included.apply(this, arguments);
