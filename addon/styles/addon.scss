@@ -60,27 +60,26 @@
         right: 0;
 
         background: #ffebaa;
-        background: -webkit-gradient(linear,left bottom,left top,color-stop(0,#ffebaa),color-stop(1,#fff9dc));
+
 
       }
       &:before {
         content: ' ';
         position: absolute;
         top: -1px;
-        left: 0;
+
         z-index: -1;
         right: -1px;
         bottom: 0;
         display: block;
         background: #E5F4EE;
-        background: -webkit-gradient(linear,left bottom,left top,color-stop(0,#ccecdf),color-stop(1,#e9f6f1));
+
       }
     }
   }
 
   .hint-menu.with-help .modifier {
     cursor: pointer;
-    border-radius: 3px;
   }
 
   ul.slack-search-input-list {
@@ -93,7 +92,6 @@
     li {
       margin: 0;
       padding: 2px 8px;
-      border-radius: 3px;
       .modifier-value {
         color: #aaa;
       }
