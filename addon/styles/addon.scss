@@ -19,9 +19,6 @@
     .hint-menu {
       background-color: white;
       padding: 10px 14px;
-      box-shadow: 0 0 5px 0px #eee;
-      border: 1px solid #ccc;
-      border-radius: 6px;
       &.with-help {
         width: 360px;
         .help-title {
@@ -61,12 +58,10 @@
       z-index: 10;
       &.incomplete:before {
         right: 0;
-        border-color: #FFDCB1;
+
         background: #ffebaa;
         background: -webkit-gradient(linear,left bottom,left top,color-stop(0,#ffebaa),color-stop(1,#fff9dc));
-        border-right: none;
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
+
       }
       &:before {
         content: ' ';
@@ -77,11 +72,6 @@
         right: -1px;
         bottom: 0;
         display: block;
-        box-sizing: border-box;
-        border-radius: 5px;
-        border-width: 1px;
-        border-style: solid;
-        border-color: #8CD5B7;
         background: #E5F4EE;
         background: -webkit-gradient(linear,left bottom,left top,color-stop(0,#ccecdf),color-stop(1,#e9f6f1));
       }
