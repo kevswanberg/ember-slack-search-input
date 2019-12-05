@@ -13,7 +13,7 @@ import {
 
 export default Component.extend({
   layout: layout,
-  classNames: ['slack-search-input'],
+  classNames: ['search-suggestion-side-by-side-input'],
   cursorLocation: -1,
   // used to pass event to child components
   enterClicked: false,
