@@ -9,7 +9,7 @@ export default Controller.extend({
       content: [
         {value: 'abrahm', label: 'Abrahm Micanski' },
         {value: 'lilly', label: 'Lilly Richards' },
-        {value: 'emma', label: 'Emma Roberts' },
+        {value: 'emma', label: 'Emma Robertsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa' },
       ]
     },
 
