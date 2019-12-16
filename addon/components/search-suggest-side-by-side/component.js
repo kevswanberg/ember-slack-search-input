@@ -23,6 +23,7 @@ export default Component.extend({
   isPopupHidden: false,
   isPopupFocused: false, // when popup focused not triggering enter event when enter clicked
   multiLine: true,
+  numRows: 15,
 
   configHash: {},
   firstTimeFocus: true,
